@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./index.css";
+import MainCard from "./componenets/MainCard";
 
 function App() {
   return (
     <>
-      <div className="bg-violet-900">App component</div>
+      <MainCard />
     </>
   );
 }
