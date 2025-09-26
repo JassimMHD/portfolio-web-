@@ -17,7 +17,7 @@ export default function AnalogClock() {
   const hourDeg = (hours / 12) * 360 + (minutes / 60) * 30;
 
   return (
-    <div className="relative w-48 h-48 rounded-full border border-gray-400 flex items-center justify-center bg-white shadow">
+    <div className="w-20 h-20 rounded-full border border-gray-400 flex items-center justify-center bg-white shadow">
       {/* Hour hand */}
       <div
         className="absolute w-1 h-12 bg-gray-800 origin-bottom"
