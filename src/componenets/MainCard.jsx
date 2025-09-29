@@ -33,17 +33,17 @@ function MainCard() {
       <main className="flex-1 p-6 md:p-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-dvh">
           <div className="grid gap-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 max-h-[250px]">
               <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
                 <div className="flex justify-between ">
                   <p>Time</p>
-                  <p className="text-fuchsia-400">Srilanka</p>
+                  <p className="text-gray-400">Srilanka</p>
                 </div>
                 <hr />
                 {/* <AnalogClock />  */}
                 {/* <Clock /> */}
               </div>
-              <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition grid">
+              <div className="bg-white rounded-2xl shadow-sm pt-6 pr-6 pl-6 pb-0 hover:shadow-md transition grid">
                 <div>
                   <div className="flex justify-between">
                     <p>Mode</p>
@@ -70,7 +70,7 @@ function MainCard() {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-sm p-12 hover:shadow-md transition grid gap-2">
+            <div className="bg-white rounded-2xl shadow-sm p-5 hover:shadow-md transition grid gap-2">
               <div>
                 <p>Projects</p>
                 <hr />
@@ -96,7 +96,7 @@ function MainCard() {
               <div>
                 <div className="flex justify-between">
                   <p>About</p>
-                  <p className="text-fuchsia-400">Jassim</p>
+                  <p className="text-gray-400">Jassim</p>
                 </div>
 
                 <hr />
@@ -140,47 +140,256 @@ function MainCard() {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition cursor-pointer grid gap-2">
-              <div className="flex justify-between">
+            <div className="bg-white rounded-2xl shadow-sm  hover:shadow-md transition cursor-pointer relative overflow-hidden ">
+              <div className="absolute top-0 left-0 w-full flex justify-between p-4 z-10 text-white font-semibold">
                 <p>Latest Products</p>
-                <p>Explore</p>
+                <p className="cursor-pointer">Explore</p>
               </div>
-              <hr />
               <img
                 src="./assets/images/perfume.jpg"
                 alt=""
-                className="w-full h-full"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
 
-          <div className="grid gap-6 aspect-6/12]">
-            <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition overflow-y-scroll">
+          <div className="grid gap-2 ">
+            <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition overflow-y-auto max-h-[380px]">
               <div>
                 <p>Experience & Education</p>
-                <hr />
               </div>
-              <div className="flex flex-wrap justify-between p-5">
-                <div className="aspect-[1/3]">
-                  <div className="flex gap-2 flex-wrap">
+
+              {/* one start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
                     <div>2022</div>
-                    <div>----</div>
+                    <div>-</div>
                     <div>Now</div>
                   </div>
                 </div>
-                <div className="aspect-[2/3]">
-                  <div>
+                <div>
+                  <div className="pl-2">
                     <div>
                       <b>Creative Studio Owner</b>
                     </div>
-                    <div>fyhjncuovsxssxneneje nevk</div>
+                    <div>
+                      <p className="text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Commodi, unde.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* two start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2020</div>
+                    <div>-</div>
+                    <div>2022</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Nike</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Designer & Creative Director kksjdks
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* three start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2018</div>
+                    <div>-</div>
+                    <div>2020</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Spotify</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Designer & Art Director makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* four start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2016</div>
+                    <div>-</div>
+                    <div>2018</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Apple</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Product designer knwkw makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* five start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2016</div>
+                    <div>-</div>
+                    <div>2018</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Apple</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Product designer knwkw makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* six start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2016</div>
+                    <div>-</div>
+                    <div>2018</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Apple</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Product designer knwkw makdk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition ">
-              <p>Side Projects</p>
-              <hr />
+
+            {/* side Project */}
+            <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-md transition overflow-auto max-h-[250px]">
+              <div>
+                <p>Side Projects</p>
+              </div>
+
+              {/* one start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2018</div>
+                    <div>-</div>
+                    <div>2020</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Spotify</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Designer & Art Director makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* two start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2018</div>
+                    <div>-</div>
+                    <div>2020</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Spotify</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Designer & Art Director makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               {/* three start */}
+              <hr className="text-gray-400" />
+              <div className="flex flex-1 justify-between p-4">
+                <div>
+                  <div className="flex gap-2 flex-row pr-2 text-gray-400">
+                    <div>2018</div>
+                    <div>-</div>
+                    <div>2020</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="pl-2">
+                    <div>
+                      <b>Spotify</b>
+                    </div>
+                    <div>
+                      <p className="text-gray-400">
+                        Designer & Art Director makdk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
             </div>
             <div className="grid grid-cols-2 gap-4 ">
               <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
